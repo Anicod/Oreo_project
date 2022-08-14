@@ -1,0 +1,39 @@
+.innercontainer{
+    background-color: rgb(140, 0, 255);
+
+    
+}
+
+
+.inputcontainer{
+    border-style: outset; 
+    border-width: 3px; 
+    border-color:rgba(0, 0, 0, 0.203); 
+    box-shadow: 1000px;
+    height: 40px;
+}
+
+.innerhead{
+    border: 7px solid rgba(255, 255, 255, 0.415);
+     margin-left: 1100px; 
+     border-radius: 50px; 
+     background-color: rgba(255, 255, 255, 0.415);
+}
+.innerdiv{
+    background-color: white;
+    
+}
+.fxdiv{
+    border-style: inset; 
+    width: 1500px; 
+    height: 500px; 
+    border-color:rgba(0, 0, 0, 0.203); 
+    margin-left: 15px;
+}
+
+.matdiv{
+    width: 500px; 
+    border: 1px solid gray; 
+    margin-left: 10px; 
+    margin-top: 10px;
+}

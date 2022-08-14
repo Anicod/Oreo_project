@@ -1,0 +1,101 @@
+.innercontainer{
+    background-color: rgb(140, 0, 255);
+    
+}
+.inputcontainer{
+    border-style: outset; 
+    border-width: 3px; 
+    border-color:rgba(0, 0, 0, 0.203); 
+    box-shadow: 1000px;
+    margin-bottom: -20px;
+    .icon{
+        color: white; font-size: 25px;
+        span{
+            margin-left: 50px;
+            margin-right: 5px;
+            font-size: 20px;
+        }
+        span{
+            margin-left: 20px;
+        }
+        span{
+            margin-left: 20px;
+
+        }
+        span{
+            margin-left: 20px;
+        }
+        span{
+            margin-left: 0px;
+        }
+        span{
+            margin-left: 20px;
+        }
+        span{
+            margin-left: 20px;
+            input{
+                border-radius: 30px;
+                margin-right: 750px;
+                padding: 0.15%;
+                width: 15%;
+            }
+        }
+       
+    }
+}
+mat-grid-tile {
+    background: whitesmoke;
+    border:  10px solid white;
+  }
+
+.innerhead{
+    border: 7px solid rgba(255, 255, 255, 0.415);
+     margin-left: 1100px; 
+     border-radius: 50px; 
+     background-color: rgba(255, 255, 255, 0.415);
+}
+img{
+    margin-bottom: 100px;
+    margin-left: 40px;
+    margin-right: -70px;
+}
+.matinnerdivname{
+    margin-right: 100px;  
+    margin-top: 330px;
+    h5{
+        margin-left: -120px; 
+        font-size: 18px; 
+    }
+}
+.matinnerdivprice{
+    margin-top: 380px; 
+    margin-right: 10px;
+    h3{
+        margin-left: -230px;
+        font-weight: 420;
+    }
+}
+.matinnerdivdiscount{
+    margin-top: 380px; 
+    margin-right: 10px;
+    h3{
+        margin-left: -190px;
+        color: rgb(255, 0, 0);
+        font-weight: 500;
+    }
+}
+
+#log{
+        margin-left: 200px; 
+        margin: 15px;  
+        margin-right: 100px;
+}
+#setting{
+        margin-left: 120px;
+        margin: 5px;
+        margin-right: -100px;
+}
+.buttonin{
+    background-color: inherit; 
+    border: none;
+}

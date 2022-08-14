@@ -1,0 +1,48 @@
+<div class="innercontainer">
+    <div fxLayout="row" fxLayoutAlign="center" class="inputcontainer">
+        <p class="icon">Oreo 
+            <span class="material-symbols-outlined">compare_arrows</span>
+            <span class="material-symbols-outlined">inventory_2</span>
+            <span class="material-symbols-outlined">mail</span>
+            <span class="material-symbols-outlined">perm_contact_calendar</span>
+            <span class="material-symbols-outlined">notifications</span>
+            <span class="material-symbols-outlined">flag</span>
+            <span><input type="text" placeholder="search"></span>
+            <span class="material-symbols-outlined" id="log">logout</span>
+            <span class="material-symbols-outlined" id="setting">Settings</span>
+        </p>
+    </div> 
+</div>
+<div class="innercontainer">
+    <div fxLayout="row" fxLayoutAlign="center" style="border-style: inset; height: 100px; border-color:rgba(0, 0, 0, 0.203);"> 
+        <h3 style="color: white; font-size: 25px">Products</h3> 
+        <div style="margin-bottom: 300px;">
+            <p style="color: white;">Welcome to Oreo <span fxLayout="row" fxLayoutAlign="center" class="innerhead">
+                <span class="material-symbols-outlined" style="font-size: 15px;">home</span>
+                <button class="buttonin">Oreo/</button> 
+                <button class="buttonin">eCommerce/</button>  
+                <button class="buttonin">Products</button></span>
+            </p>
+        </div>
+    </div> 
+</div>
+<div>
+    <mat-grid-list cols="4" rowHeight="1:1.2" style="width: 1520px;" >
+        <span *ngFor="let product of allProducts">
+            <mat-grid-tile>
+               <img src="{{product.image}}" alt="" width="340px" height="340px" (click)="func($event)">
+                <div class="matinnerdivname">
+                    <h5><a href="/display/{{product.id}}">{{product.name}}</a></h5>
+                </div>
+                <div class="matinnerdivprice">
+                    <h3>{{product.price}}</h3>
+                </div>
+                <div class="matinnerdivdiscount">
+                    <h3>{{product.discount}}</h3>
+                </div>
+                
+            </mat-grid-tile>  
+        </span>   
+    </mat-grid-list>
+</div>
+
