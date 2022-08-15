@@ -28,33 +28,13 @@
         </div>
     </div>
 </div>
-<div class="innerdiv">
-    <div fxLayout="row" fxLayoutAlign="center" class="fxdiv"> 
-        <div>     
-            <mat-grid-list cols="4" rowHeight="1:1" class="matdiv" >
-                <span><mat-grid-tile></mat-grid-tile></span>
-                <span style="margin-left: 520px; font-size: 25px;">Simple</span>
-                <span style="margin-left: 4px; font-size: 25px;">Black</span>
-                <span style="margin-left: 4px; font-size: 25px;">Clock</span>
-                <div style="margin-top: 10px;">
-                    <span style="margin-left: 520px; font-size: 23px;">Current</span>
-                    <span style="margin-left: 4px; font-size: 23px;">Price:</span>
-                    <span style="margin-left: 4px; font-size: 23px; color: rgb(255, 200, 0);">$180</span>
-                </div>
-                <div>
-                <span class="material-symbols-outlined" style="margin-left: 520px; color: rgb(255, 200, 0);">star<span class="material-symbols-outlined">star</span>
-                <span class="material-symbols-outlined">star</span>
-                <span class="material-symbols-outlined">star</span>
-                <span class="material-symbols-outlined" style="color: black;">grade</span>
-            </span>
-            <div style="margin-top: -23px;">
-                <span style="margin-left: 650px; font-size: 15px;">Reviews</span>
-            </div>
-            <span style="margin-left: 520px;">Simple</span>
-            <span style="margin-left: 4px;">Black</span>
-            <span style="margin-left: 4px;">Clock</span>
-                </div>
-            </mat-grid-list>
-        </div>
-    </div>
+<div>    
+    <mat-grid-list cols="8" rowHeight="8:8" style="width: 1520px;" >
+        <span >
+                <mat-grid-tile>
+                        <img src="{{currentProduct.image}}" alt="">
+
+                </mat-grid-tile>  
+        </span>   
+    </mat-grid-list>
 </div>    

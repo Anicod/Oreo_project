@@ -7,27 +7,33 @@ import { RestService } from 'src/app/services/rest.service';
   styleUrls: ['./display.component.scss']
 })
 export class DisplayComponent implements OnInit {
-  allProducts:any
-  currentData:any
+  currentId:any
+  currentProduct:any
   constructor(private route: ActivatedRoute, private prod : RestService) {} 
 
   ngOnInit() {
-    let id = this.route.snapshot.params["product_id"]
+    this.currentId = this.route.snapshot.params["product_id"]
     this.getBook();
-    this.allProducts.forEach((element: { id: any; }) => {
-      if(element.id===id){
-        this.currentData = element;
-        console.log(element);
-        
-      }
-
-    });
+    console.log(this.currentProduct)
+    
+    
   }
   getBook(){
     this.prod.getData().subscribe(
       (res:any) => 
         {
-          this.allProducts=res
+           res.forEach((element: { id: any; }) => {
+            if(element["id"] === this.currentId){
+               this.currentProduct = element
+              
+            }
+            
+           });
+          // for(let i=0; i<res.length; i++){
+          //   if(res[i].id===this.currentId){
+          //     this.currentProduct = res[i].id
+          //   }
+          // }
         }
         )
     }

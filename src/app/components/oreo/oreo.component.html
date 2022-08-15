@@ -29,10 +29,10 @@
 <div>
     <mat-grid-list cols="4" rowHeight="1:1.2" style="width: 1520px;" >
         <span *ngFor="let product of allProducts">
-            <mat-grid-tile>
+            <mat-grid-tile routerLink="/display/{{product.id}}">
                <img src="{{product.image}}" alt="" width="340px" height="340px" (click)="func($event)">
                 <div class="matinnerdivname">
-                    <h5><a href="/display/{{product.id}}">{{product.name}}</a></h5>
+                    <h5>{{product.name}}</h5>
                 </div>
                 <div class="matinnerdivprice">
                     <h3>{{product.price}}</h3>
