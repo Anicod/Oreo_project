@@ -9,13 +9,16 @@ import {MatGridListModule} from '@angular/material/grid-list';
 import { DisplayComponent } from './components/display/display.component';
 import { FormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
+import { ProductListComponent } from './components/product-list/product-list.component';
+import { AgGridModule } from 'ag-grid-angular';
 
 
 @NgModule({
   declarations: [
     AppComponent,
     OreoComponent,
-    DisplayComponent
+    DisplayComponent,
+    ProductListComponent
   ],
   imports: [
     BrowserModule,
@@ -23,7 +26,8 @@ import { HttpClientModule } from '@angular/common/http';
     BrowserAnimationsModule,
     MatGridListModule,
     FormsModule,
-    HttpClientModule
+    HttpClientModule,
+    AgGridModule
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -1,52 +1,43 @@
 <div class="innercontainer">
     <div fxLayout="row" fxLayoutAlign="center" class="inputcontainer">
-        <p style="color: white; font-size: 25px; margin-top: 5px;">Oreo
-            <span class="material-symbols-outlined" style="margin-left: 50px;">compare_arrows</span>
-            <span class="material-symbols-outlined" style="margin-left: 20px;">inventory_2</span>
-            <span class="material-symbols-outlined" style="margin-left: 20px;">mail</span>
-            <span class="material-symbols-outlined" style="margin-left: 20px;">perm_contact_calendar</span>
-            <span class="material-symbols-outlined" style="margin-left: 20px;">notifications</span>
-            <span class="material-symbols-outlined" style="margin-left: 20px;">flag</span>
-            <span style="margin-left: 20px;"><input type="text" placeholder="search" style="border-radius: 30px; padding: 5px; margin-bottom: 2px;"></span>
-            <span class="material-symbols-outlined" style="margin-left: 1300px; margin-bottom: 40%;">logout</span>
-            <span class="material-symbols-outlined" style="margin-left: 50px;">Settings</span>
+        <p class="icon">Oreo 
+            <span class="material-symbols-outlined">compare_arrows</span>
+            <span class="material-symbols-outlined">inventory_2</span>
+            <span class="material-symbols-outlined">mail</span>
+            <span class="material-symbols-outlined">perm_contact_calendar</span>
+            <span class="material-symbols-outlined">notifications</span>
+            <span class="material-symbols-outlined">flag</span>
+            <span><input type="text" placeholder="search"></span>
+            <span class="material-symbols-outlined" id="log">logout</span>
+            <span class="material-symbols-outlined" id="setting">Settings</span>
         </p>
-    </div>
-</div>    
+    </div> 
+</div>
 <div class="innercontainer">
     <div fxLayout="row" fxLayoutAlign="center" style="border-style: inset; height: 100px; border-color:rgba(0, 0, 0, 0.203);"> 
         <h3 style="color: white; font-size: 25px">Products</h3> 
         <div style="margin-bottom: 300px;">
-            <p style="color: white;">Welcome to Oreo
-                <span fxLayout="row" fxLayoutAlign="center" class="innerhead">
-                    <span class="material-symbols-outlined" style="font-size: 15px;">home</span>
-                    <button style="background-color: inherit; border: none;">Oreo/</button> 
-                    <button style="background-color: inherit; border: none;">eCommerce/</button>  
-                    <button style="background-color: inherit; border: none;">Products</button>
-                </span>
+            <p style="color: white;">Welcome to Oreo <span fxLayout="row" fxLayoutAlign="center" class="innerhead">
+                <span class="material-symbols-outlined" style="font-size: 15px;">home</span>
+                <button class="buttonin">Oreo/</button> 
+                <button class="buttonin">eCommerce/</button>  
+                <button class="buttonin">Products</button></span>
             </p>
         </div>
-    </div>
-</div>
-<div>    
-    <mat-grid-list cols="1" rowHeight="1:1.1">
+    </div> 
+</div>    
+    <mat-grid-list cols="0" rowHeight="1:1.1">
                 <mat-grid-tile>
-                        <img src="{{currentProduct.image}}" alt=""  style="margin-bottom: 1250px; margin-left: 100px;">
-                        <div style="margin-bottom: 1100px; margin-left: 70px;">
+                        <img src="{{currentProduct.image}}" width="400px" height="400px" alt=""  style="margin-bottom: 1250px; margin-left: 100px;">
+                        <div style="margin-bottom: 1px; margin-left: 1px;">
                             <h3 style="line-height: 0.05px; font-size: 18px;">{{currentProduct.name}}</h3>
                             <h3 style="font-size: 18px;">Current Price:<span style="color: rgb(255, 204, 0);">{{currentProduct.price}}</span></h3>
                             <span>
-                                <span class="material-symbols-outlined">grade</span>
-                                <span class="material-symbols-outlined">grade</span>
-                                <span class="material-symbols-outlined">grade</span>
-                                <span class="material-symbols-outlined">grade</span>
+                                <span class="material-symbols-outlined">{{currentProduct.ratings}}</span>
                                 <span class="material-symbols-outlined" style="color: rgb(255, 208, 0);">grade</span>
-                                <span> 41 reviews</span>
+                                <span> {{currentProduct.Review}}</span>
                             </span>
-                            <p>Lorem ipsum is simply dummy text of the printing andd typesetting  
-                                the industry's standard dummy text ever since the 1500s. when an unknown printer took a 
-                                galley of type and scrambled it to make a type spicemen bool
-                            </p>
+                            <p>{{currentProduct.description}}</p>
                            <span style="word-spacing: 20px;font-weight:500">Sizes:      <span>S <span>M <span> L <span> XL</span></span></span></span></span><br><br>
                            <span style="word-spacing: 20px;font-weight:500">colors:      <span>
                             <button style="background-color: rgb(255, 200, 0); width: 50px; height: 50px; margin-left: 10px;"></button> <span>
@@ -56,14 +47,17 @@
                             </span>
                             <div><br><br>
                                 <button class="cart">Add to cart</button>
+                                <span *ngFor="let product of allProducts" style="display: flex; margin-left: 100px;"><br><br><br><br><br><br>
+                                    <img src="{{product.dispImage}}" alt="">
+                                </span>
                             </div>
-
                         </div>
-                </mat-grid-tile>  
+                </mat-grid-tile>   
            
     </mat-grid-list>
     <div fxLayout="row" fxLayoutAlign="center" class="innerborder">
-        
     </div>
+  
+    
 
-</div>    
+  

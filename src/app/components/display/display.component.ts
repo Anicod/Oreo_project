@@ -9,6 +9,7 @@ import { RestService } from 'src/app/services/rest.service';
 export class DisplayComponent implements OnInit {
   currentId:any
   currentProduct:any
+  allProducts:any
   constructor(private route: ActivatedRoute, private prod : RestService) {} 
 
   ngOnInit() {
@@ -29,13 +30,19 @@ export class DisplayComponent implements OnInit {
             }
             
            });
-          // for(let i=0; i<res.length; i++){
-          //   if(res[i].id===this.currentId){
-          //     this.currentProduct = res[i].id
-          //   }
-          // }
+          
         }
         )
+        this.getproduct();
     }
+    getproduct(){
+      this.prod.getData().subscribe(
+        (res:any) => 
+          {
+            this.allProducts=res
+          }
+          )
+      }
+  
 
 }

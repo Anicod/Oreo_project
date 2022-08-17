@@ -1,10 +1,6 @@
 .innercontainer{
     background-color: rgb(140, 0, 255);
-
-    
 }
-
-
 .inputcontainer{
     border-style: outset; 
     border-width: 3px; 
@@ -46,47 +42,6 @@
        
     }
 }
-
-.innerhead{
-    border: 7px solid rgba(255, 255, 255, 0.415);
-     margin-left: 1100px; 
-     border-radius: 50px; 
-     background-color: rgba(255, 255, 255, 0.415);
-}
-.innerdiv{
-    background-color: white;
-    
-}
-.fxdiv{
-    border-style: inset; 
-    width: 1500px; 
-    height: 500px; 
-    border-color:rgba(0, 0, 0, 0.203); 
-    margin-left: 15px;
-}
-
-.matdiv{
-    width: 500px; 
-    border: 1px solid gray; 
-    margin-left: 10px; 
-    margin-top: 10px;
-}
-.innerborder{
-    border: 1px solid gray;
-     width: 1550px;
-     margin-left: 10px;
-     margin-top: -1720px;
-     height: 800px; 
-     background-color: rgba(255, 255, 255, 0.415);
-}
-.cart{
-    padding: 25px;
-     height: 5px; 
-     background-color: blue;
-      border-radius: 200px; 
-      color: white; 
-      font-weight: 600;
-}
 #log{
     margin-left: 200px; 
     margin: 15px;  
@@ -96,6 +51,12 @@
     margin-left: 120px;
     margin: 5px;
     margin-right: -100px;
+}
+.innerhead{
+    border: 7px solid rgba(255, 255, 255, 0.415);
+     margin-left: 1100px; 
+     border-radius: 50px; 
+     background-color: rgba(255, 255, 255, 0.415);
 }
 .buttonin{
     background-color: inherit; 

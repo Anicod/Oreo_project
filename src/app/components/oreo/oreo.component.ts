@@ -26,11 +26,6 @@ export class OreoComponent implements OnInit {
         }
         )
     }
-
-   
-   func(event: any){
-    console.log(event)
-   } 
     
   }
    
