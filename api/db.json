@@ -1,95 +1,126 @@
 {
-  "products" :[
+  "products": [
     {
-      "id" : "1",
-      "image" : "../../../assets/downcy.png",
-      "name" : "Bicycle",
+      "id": "1",
+      "image": "../../../assets/downcy.png",
+      "name": "Bicycle",
       "price": "$18",
       "discount": "$12",
       "description": "Single-speed for fuss-free riding. Perfect for leisure as well as for those looking to channel their raw energy",
       "Review": "41 reviews",
-      "ratings": "gradegradegradegrade"
-      
+      "ratings": "gradegradegrade",
+      "miniImage":[
+          "../../../assets/bicycleg.png",
+          "../../../assets/bicyclegr.png" 
+      ],
+      "ratingst": "gradegrade"
     },
     {
-      "id" : "2",
-      "image" : "../../../assets/download(1).png",
-      "name" : "Rangers",
-      "price": "$20",
-      "discount": "$15",
-      "description": "Biking or cycling has been on an upwards trajectory for some time, and when the tsunami of lockdowns was upon us and the lungs needed to be in good shape, people took to biking like there is no tomorrow.",
-      "Review": "48 reviews",
-      "ratings": "gradegradegrade"
-    },
-    {
-      "id" : "3",
-      "image" : "../../../assets/download(2).png",
-      "name" : "Perfume",
+      "id": "2",
+      "image": "../../../assets/download(2).png",
+      "name": "Perfume",
       "price": "$15",
       "discount": "$10",
-      "description":"Cool, crisp fragrance of the mountains that will remind you of snow peaks and deodar trees.",
+      "description": "Cool, crisp fragrance of the mountains that will remind you of snow peaks and deodar trees.",
       "Review": "44 reviews",
-      "ratings": "gradegradegrade"
+      "ratings": "gradegradegradegrade",
+      "miniImage":[
+        "../../../assets/perfumeb.png",
+        "../../../assets/perfumeg.png" 
+    ],
+      "ratingst": "grade"
     },
     {
-      "id" : "4",
-      "image" : "../../../assets/images(1).png",
-      "name" : "Candle Holder",
+      "id": "3",
+      "image": "../../../assets/images(1).png",
+      "name": "Candle Holder",
       "price": "$30",
       "discount": "$22",
-      "description":"The elegant lines of this gold candle holder set of 2 make it a beautiful addition for your living space",
+      "description": "The elegant lines of this gold candle holder set of 2 make it a beautiful addition for your living space",
       "Review": "43 reviews",
-      "ratings": "gradegradegrade"
+      "ratings": "gradegrade",
+      "miniImage":[
+        "../../../assets/holderr.png",
+        "../../../assets/holderg.png" 
+    ],
+      "ratingst": "gradegradegrade"
     },
     {
-      "id" : "5",
-      "image" : "../../../assets/images(2).png",
-      "name" : "Perse",
+      "id": "4",
+      "image": "../../../assets/images(2).png",
+      "name": "Perse",
       "price": "$32",
       "discount": "$25",
       "description": "2 Adjustable & Detachable Shoulder Straps",
       "Review": "47 reviews",
-      "ratings": "gradegradegradegradegrade"
+      "ratings": "gradegradegradegrade",
+      "miniImage":[
+        "../../../assets/purseg.png",
+        "../../../assets/purser.png" 
+    ],
+      "ratingst": "grade"
     },
     {
-      "id" : "6",
-      "image" : "../../../assets/images(3).png",
-      "name" : "Chair",
+      "id": "5",
+      "image": "../../../assets/images(3).png",
+      "name": "Chair",
       "price": "$34",
       "discount": "$27",
       "description": "This chair is uniquely engineered to support your lower back so that you can stay focused and work comfortably anywhere, at anytime.",
       "Review": "49 reviews",
-      "ratings": "gradegradegradegrade"
+      "ratings": "gradegradegrade",
+      "miniImage":[
+        "../../../assets/chairg.png",
+        "../../../assets/chairw.png" 
+    ],
+      "ratingst": "gradegrade"
     },
     {
-      "id" : "7",
-      "image" : "../../../assets/images(4).png",
-      "name" : "Pot",
+      "id": "6",
+      "image": "../../../assets/images(4).png",
+      "name": "Pot",
       "price": "$30",
       "discount": "$22",
       "description": "This is a great decorative planter to bring your plants indoors. Well finished",
       "Review": "42 reviews",
-      "ratings": "gradegradegradegrade"
+      "ratings": "gradegradegrade",
+      "miniImage":[
+        "../../../assets/potr.png",
+        "../../../assets/potre.png" 
+    ],
+      "ratingst": "gradegrade"
     },
     {
-      "id" : "8",
-      "image" : "../../../assets/images(5).png",
-      "name" : "Carry bag",
+      "id": "7",
+      "image": "../../../assets/images(5).png",
+      "name": "Carry bag",
       "price": "$32",
       "discount": "$20",
       "description": "Backpack Ideal For Laptop Made up of  Polyester",
       "Review": "46 reviews",
-      "ratings": "gradegrade"
+      "ratings": "gradegradegradegrade",
+      "miniImage":[
+        "../../../assets/bagg.png",
+        "../../../assets/bagb.png" 
+    ],
+      "ratingst": "grade"
     },
     {
-      "id" : "9",
-      "image" : "../../../assets/shooes.png",
-      "name" : "shooes",
+      "id": "8",
+      "image": "../../../assets/shooes.png",
+      "name": "shooes",
       "price": "$40",
       "discount": "$30",
       "description": "RIDER BOOTS FOR MEN CASUAL OUTDOOR for WALKING RUNNING and TRAVLING",
       "Review": "41 reviews",
-      "ratings": "gradegradegradegrade"
+      "ratings": "gradegradegrade",
+      "miniImage":[
+        "../../../assets/shooesg.png",
+        "../../../assets/shooesre.png" 
+    ],
+      "ratingst": "gradegrade"
     }
   ]
+
 }
+   

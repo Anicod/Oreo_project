@@ -1,5 +1,6 @@
 .innercontainer{
     background-color: rgb(140, 0, 255);
+    
 }
 .inputcontainer{
     border-style: outset; 
@@ -52,13 +53,13 @@
     margin: 5px;
     margin-right: -100px;
 }
+.buttonin{
+background-color: inherit; 
+border: none;
+}
 .innerhead{
     border: 7px solid rgba(255, 255, 255, 0.415);
      margin-left: 1100px; 
      border-radius: 50px; 
      background-color: rgba(255, 255, 255, 0.415);
-}
-.buttonin{
-    background-color: inherit; 
-    border: none;
 }

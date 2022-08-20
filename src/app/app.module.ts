@@ -9,8 +9,9 @@ import {MatGridListModule} from '@angular/material/grid-list';
 import { DisplayComponent } from './components/display/display.component';
 import { FormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
-import { ProductListComponent } from './components/product-list/product-list.component';
 import { AgGridModule } from 'ag-grid-angular';
+import { ProductlistsComponent } from './components/productlists/productlists.component';
+
 
 
 @NgModule({
@@ -18,7 +19,7 @@ import { AgGridModule } from 'ag-grid-angular';
     AppComponent,
     OreoComponent,
     DisplayComponent,
-    ProductListComponent
+    ProductlistsComponent,
   ],
   imports: [
     BrowserModule,

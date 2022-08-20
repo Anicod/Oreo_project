@@ -6,6 +6,8 @@ import { OreoComponent } from './components/oreo/oreo.component';
 const routes: Routes = [
   {path : 'oreo', component : OreoComponent},
   {path : 'display/:product_id', component : DisplayComponent}
+ 
+  
 ];
 
 @NgModule({

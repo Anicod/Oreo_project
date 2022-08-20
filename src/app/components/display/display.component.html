@@ -18,7 +18,7 @@
         <h3 style="color: white; font-size: 25px">Products</h3> 
         <div style="margin-bottom: 300px;">
             <p style="color: white;">Welcome to Oreo <span fxLayout="row" fxLayoutAlign="center" class="innerhead">
-                <span class="material-symbols-outlined" style="font-size: 15px;">home</span>
+                <span class="material-symbols-outlined" style="font-size: 15px; cursor: pointer;" routerLink="/oreo">home</span>
                 <button class="buttonin">Oreo/</button> 
                 <button class="buttonin">eCommerce/</button>  
                 <button class="buttonin">Products</button></span>
@@ -26,15 +26,15 @@
         </div>
     </div> 
 </div>    
-    <mat-grid-list cols="0" rowHeight="1:1.1">
+    <mat-grid-list cols="1" rowHeight="1:1.1">
                 <mat-grid-tile>
-                        <img src="{{currentProduct.image}}" width="400px" height="400px" alt=""  style="margin-bottom: 1250px; margin-left: 100px;">
-                        <div style="margin-bottom: 1px; margin-left: 1px;">
+                        <img src="{{currentImage}}" width="400px" height="400px" alt=""  style="margin-bottom: 1250px; margin-left: -10px;">
+                        <div style="margin-bottom: 900px; margin-left: 100px;">
                             <h3 style="line-height: 0.05px; font-size: 18px;">{{currentProduct.name}}</h3>
                             <h3 style="font-size: 18px;">Current Price:<span style="color: rgb(255, 204, 0);">{{currentProduct.price}}</span></h3>
                             <span>
-                                <span class="material-symbols-outlined">{{currentProduct.ratings}}</span>
-                                <span class="material-symbols-outlined" style="color: rgb(255, 208, 0);">grade</span>
+                                <span class="material-symbols-outlined" style="color: rgb(255, 208, 0);">{{currentProduct.ratings}}</span>
+                                <span class="material-symbols-outlined">{{currentProduct.ratingst}}</span>
                                 <span> {{currentProduct.Review}}</span>
                             </span>
                             <p>{{currentProduct.description}}</p>
@@ -47,9 +47,10 @@
                             </span>
                             <div><br><br>
                                 <button class="cart">Add to cart</button>
-                                <span *ngFor="let product of allProducts" style="display: flex; margin-left: 100px;"><br><br><br><br><br><br>
-                                    <img src="{{product.dispImage}}" alt="">
-                                </span>
+                               <div style="margin-right: 700px; margin-top: 100px;">
+                                    <img src="{{miniImage[0]}}" alt="" (click)="switchImageOne()" width="150ps" height="150px">
+                                    <img src="{{miniImage[1]}}" alt="" (click)="switchImageTwo()" width="150px" height="150px">
+                               </div>
                             </div>
                         </div>
                 </mat-grid-tile>   
