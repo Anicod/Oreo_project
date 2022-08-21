@@ -18,7 +18,7 @@
         <h3 style="color: white; font-size: 25px">Products</h3> 
         <div style="margin-bottom: 300px;">
             <p style="color: white;">Welcome to Oreo <span fxLayout="row" fxLayoutAlign="center" class="innerhead">
-                <span class="material-symbols-outlined" style="font-size: 15px;">home</span>
+                <span class="material-symbols-outlined" style="font-size: 15px; cursor: pointer;" routerLink="/oreo">home</span>
                 <button class="buttonin">Oreo/</button> 
                 <button class="buttonin">eCommerce/</button>  
                 <button class="buttonin">Products</button></span>
@@ -26,9 +26,24 @@
         </div>
     </div> 
 </div>
-<span *ngFor="let product of allProducts">
-    <div>
-        sjkndnknkdfn
-    </div>
-    
-</span>
+<table style="width: 97%; height: 10%;">
+    <tr>
+      <th>Image</th>
+      <th>Product Name</th>
+      <th>Derail</th>
+      <th>Amount</th>
+      <th>Stock</th>
+      <th>Action</th>
+    </tr>
+    <tr *ngFor="let product of allProducts">
+        <td><img src="{{product.image}}" alt="" width="50px" height="50px"></td>
+        <td>{{product.name}}</td>
+        <td>{{product.description}}</td>
+        <td>{{product.price}}</td>
+        <td>{{product.stock}}</td>
+        <td><span class="material-symbols-outlined">{{product.update}}</span>
+            <span class="material-symbols-outlined"> {{product.remove}}</span>
+        </td>
+    </tr>
+</table>
+

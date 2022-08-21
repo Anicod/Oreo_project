@@ -9,7 +9,7 @@ import { RestService } from 'src/app/services/rest.service';
 export class DisplayComponent implements OnInit {
   currentId:any
   currentProduct:any
-  currentImage:string="../../../assets/load.png"
+  currentImage:any
   miniImage:any
 
   constructor(private route: ActivatedRoute, private prod : RestService) {} 
@@ -35,25 +35,27 @@ export class DisplayComponent implements OnInit {
         )
     }
    
-      // cart(){
-      //   let data={
-      //     "id" : this.currentProduct.id,
-      //     "image" :this.currentProduct.image,
-      //     "name" : this.currentProduct.name,
-      //     "price": this.currentProduct.price,
-      //     "discount": this.currentProduct.discount,
-      //     "description": this.currentProduct.description,
-      //     "Review": this.currentProduct.Review,
-      //     "ratings":this.currentProduct.ratings,
-      //     "imagef":  this.currentProduct.imagef,
-      //     "ratingst":this.currentProduct.ratingst
-    
-      //   }
-      //   this.prod.addList(data).subscribe((response:any)=>{
-      //     console.log(response)
-          
-      //   })
-      // }
+       cart(){
+         alert("Added successfully")
+         let data={
+           "id" : this.currentProduct.id,
+           "image" :this.currentProduct.image,
+           "name" : this.currentProduct.name,
+           "price": this.currentProduct.price,
+           "discount": this.currentProduct.discount,
+           "description": this.currentProduct.description,
+           "Review": this.currentProduct.Review,
+           "ratings":this.currentProduct.ratings,
+           "miniImage":  this.currentProduct.miniImage,
+           "ratingst":this.currentProduct.ratingst,
+           "stock":this.currentProduct.stock,
+           "update":this.currentProduct.update,
+           "delete":this.currentProduct.delete
+         }
+         this.prod.addList(data).subscribe((res:any)=>{
+          console.log(res)
+        })
+       }
       switchImageOne(){
         let temp = this.currentImage
         this.currentImage = this.miniImage[0]

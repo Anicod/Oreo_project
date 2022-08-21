@@ -9,11 +9,14 @@
       "description": "Single-speed for fuss-free riding. Perfect for leisure as well as for those looking to channel their raw energy",
       "Review": "41 reviews",
       "ratings": "gradegradegrade",
-      "miniImage":[
-          "../../../assets/bicycleg.png",
-          "../../../assets/bicyclegr.png" 
+      "miniImage": [
+        "../../../assets/bicycleg.png",
+        "../../../assets/bicyclegr.png"
       ],
-      "ratingst": "gradegrade"
+      "ratingst": "gradegrade",
+      "stock": "In stock",
+      "update": "edit",
+      "remove": "delete"
     },
     {
       "id": "2",
@@ -24,11 +27,14 @@
       "description": "Cool, crisp fragrance of the mountains that will remind you of snow peaks and deodar trees.",
       "Review": "44 reviews",
       "ratings": "gradegradegradegrade",
-      "miniImage":[
+      "miniImage": [
         "../../../assets/perfumeb.png",
-        "../../../assets/perfumeg.png" 
-    ],
-      "ratingst": "grade"
+        "../../../assets/perfumeg.png"
+      ],
+      "ratingst": "grade",
+      "stock": "Low stock",
+      "update": "edit",
+      "remove": "delete"
     },
     {
       "id": "3",
@@ -39,11 +45,14 @@
       "description": "The elegant lines of this gold candle holder set of 2 make it a beautiful addition for your living space",
       "Review": "43 reviews",
       "ratings": "gradegrade",
-      "miniImage":[
+      "miniImage": [
         "../../../assets/holderr.png",
-        "../../../assets/holderg.png" 
-    ],
-      "ratingst": "gradegradegrade"
+        "../../../assets/holderg.png"
+      ],
+      "ratingst": "gradegradegrade",
+      "stock": "Out of stock",
+      "update": "edit",
+      "remove": "delete"
     },
     {
       "id": "4",
@@ -54,11 +63,14 @@
       "description": "2 Adjustable & Detachable Shoulder Straps",
       "Review": "47 reviews",
       "ratings": "gradegradegradegrade",
-      "miniImage":[
+      "miniImage": [
         "../../../assets/purseg.png",
-        "../../../assets/purser.png" 
-    ],
-      "ratingst": "grade"
+        "../../../assets/purser.png"
+      ],
+      "ratingst": "grade",
+      "stock": "In stock",
+      "update": "edit",
+      "remove": "delete"
     },
     {
       "id": "5",
@@ -69,11 +81,14 @@
       "description": "This chair is uniquely engineered to support your lower back so that you can stay focused and work comfortably anywhere, at anytime.",
       "Review": "49 reviews",
       "ratings": "gradegradegrade",
-      "miniImage":[
+      "miniImage": [
         "../../../assets/chairg.png",
-        "../../../assets/chairw.png" 
-    ],
-      "ratingst": "gradegrade"
+        "../../../assets/chairw.png"
+      ],
+      "ratingst": "gradegrade",
+      "stock": "Low stock",
+      "update": "edit",
+      "remove": "delete"
     },
     {
       "id": "6",
@@ -84,11 +99,14 @@
       "description": "This is a great decorative planter to bring your plants indoors. Well finished",
       "Review": "42 reviews",
       "ratings": "gradegradegrade",
-      "miniImage":[
+      "miniImage": [
         "../../../assets/potr.png",
-        "../../../assets/potre.png" 
-    ],
-      "ratingst": "gradegrade"
+        "../../../assets/potre.png"
+      ],
+      "ratingst": "gradegrade",
+      "stock": "Out of stock",
+      "update": "edit",
+      "remove": "delete"
     },
     {
       "id": "7",
@@ -99,11 +117,14 @@
       "description": "Backpack Ideal For Laptop Made up of  Polyester",
       "Review": "46 reviews",
       "ratings": "gradegradegradegrade",
-      "miniImage":[
+      "miniImage": [
         "../../../assets/bagg.png",
-        "../../../assets/bagb.png" 
-    ],
-      "ratingst": "grade"
+        "../../../assets/bagb.png"
+      ],
+      "ratingst": "grade",
+      "stock": "In stock",
+      "update": "edit",
+      "remove": "delete"
     },
     {
       "id": "8",
@@ -114,13 +135,70 @@
       "description": "RIDER BOOTS FOR MEN CASUAL OUTDOOR for WALKING RUNNING and TRAVLING",
       "Review": "41 reviews",
       "ratings": "gradegradegrade",
-      "miniImage":[
+      "miniImage": [
         "../../../assets/shooesg.png",
-        "../../../assets/shooesre.png" 
-    ],
-      "ratingst": "gradegrade"
+        "../../../assets/shooesre.png"
+      ],
+      "ratingst": "gradegrade",
+      "stock": "In stock",
+      "update": "edit",
+      "remove": "delete"
+    }
+  ],
+  "cart": [
+    {
+      "id": "1",
+      "image": "../../../assets/downcy.png",
+      "name": "Bicycle",
+      "price": "$18",
+      "discount": "$12",
+      "description": "Single-speed for fuss-free riding. Perfect for leisure as well as for those looking to channel their raw energy",
+      "Review": "41 reviews",
+      "ratings": "gradegradegrade",
+      "miniImage": [
+        "../../../assets/bicycleg.png",
+        "../../../assets/bicyclegr.png"
+      ],
+      "ratingst": "gradegrade",
+      "stock": "In stock",
+      "update": "edit",
+      "remove": "delete"
+    },
+    {
+      "id": "2",
+      "image": "../../../assets/download(2).png",
+      "name": "Perfume",
+      "price": "$15",
+      "discount": "$10",
+      "description": "Cool, crisp fragrance of the mountains that will remind you of snow peaks and deodar trees.",
+      "Review": "44 reviews",
+      "ratings": "gradegradegradegrade",
+      "miniImage": [
+        "../../../assets/perfumeb.png",
+        "../../../assets/perfumeg.png"
+      ],
+      "ratingst": "grade",
+      "stock": "Low stock",
+      "update": "edit",
+      "remove": "delete"
+    },
+    {
+      "id": "3",
+      "image": "../../../assets/images(1).png",
+      "name": "Candle Holder",
+      "price": "$30",
+      "discount": "$22",
+      "description": "The elegant lines of this gold candle holder set of 2 make it a beautiful addition for your living space",
+      "Review": "43 reviews",
+      "ratings": "gradegrade",
+      "miniImage": [
+        "../../../assets/holderr.png",
+        "../../../assets/holderg.png"
+      ],
+      "ratingst": "gradegradegrade",
+      "stock": "Out of stock",
+      "update": "edit",
+      "remove": "delete"
     }
   ]
-
 }
-   

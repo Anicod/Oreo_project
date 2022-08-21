@@ -11,10 +11,10 @@ export class ProductlistsComponent implements OnInit {
   constructor( private prod : RestService) { }
 
   ngOnInit(): void {
-    
+    this.getproduct();
   }
   getproduct(){
-    this.prod.getData().subscribe(
+    this.prod.getCart().subscribe(
       (res:any) => 
         {
           this.allProducts=res
