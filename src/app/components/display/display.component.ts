@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import {ActivatedRoute} from '@angular/router';
 import { RestService } from 'src/app/services/rest.service';
+import {MatSnackBar} from '@angular/material/snack-bar';
 @Component({
   selector: 'app-display',
   templateUrl: './display.component.html',
@@ -12,7 +13,7 @@ export class DisplayComponent implements OnInit {
   currentImage:any
   miniImage:any
 
-  constructor(private route: ActivatedRoute, private prod : RestService) {} 
+  constructor(private route: ActivatedRoute, private prod : RestService, private snackBar: MatSnackBar) {} 
 
   ngOnInit() {
     this.currentId = this.route.snapshot.params["product_id"]
@@ -36,7 +37,6 @@ export class DisplayComponent implements OnInit {
     }
    
        cart(){
-         alert("Added successfully")
          let data={
            "id" : this.currentProduct.id,
            "image" :this.currentProduct.image,
@@ -50,7 +50,7 @@ export class DisplayComponent implements OnInit {
            "ratingst":this.currentProduct.ratingst,
            "stock":this.currentProduct.stock,
            "update":this.currentProduct.update,
-           "delete":this.currentProduct.delete
+           "remove":this.currentProduct.remove
          }
          this.prod.addList(data).subscribe((res:any)=>{
           console.log(res)
@@ -65,5 +65,9 @@ export class DisplayComponent implements OnInit {
         let temp = this.currentImage
         this.currentImage = this.miniImage[1]
         this.miniImage[1] = temp
+      }
+      openSnackBar(message: any) {
+        this.snackBar.open(message);
+        this.cart();
       }
 }

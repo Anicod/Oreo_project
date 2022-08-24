@@ -11,6 +11,9 @@ import { FormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 import { AgGridModule } from 'ag-grid-angular';
 import { ProductlistsComponent } from './components/productlists/productlists.component';
+import {MatFormFieldModule} from '@angular/material/form-field';
+import { MatInputModule } from '@angular/material/input';
+import {MatSnackBarModule} from '@angular/material/snack-bar';
 
 
 
@@ -28,7 +31,10 @@ import { ProductlistsComponent } from './components/productlists/productlists.co
     MatGridListModule,
     FormsModule,
     HttpClientModule,
-    AgGridModule
+    AgGridModule,
+    MatFormFieldModule,
+    MatInputModule,
+    MatSnackBarModule
   ],
   providers: [],
   bootstrap: [AppComponent]

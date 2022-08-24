@@ -30,7 +30,7 @@
     <tr>
       <th>Image</th>
       <th>Product Name</th>
-      <th>Derail</th>
+      <th>Detail</th>
       <th>Amount</th>
       <th>Stock</th>
       <th>Action</th>
@@ -42,7 +42,7 @@
         <td>{{product.price}}</td>
         <td>{{product.stock}}</td>
         <td><span class="material-symbols-outlined">{{product.update}}</span>
-            <span class="material-symbols-outlined"> {{product.remove}}</span>
+            <span class="material-symbols-outlined" (click)="deleteList(product.id)" style="cursor: pointer;"> {{product.remove}}</span>
         </td>
     </tr>
 </table>

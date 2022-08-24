@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
+import { ActivatedRoute } from '@angular/router';
 import { RestService } from 'src/app/services/rest.service';
 
 @Component({
@@ -8,6 +9,9 @@ import { RestService } from 'src/app/services/rest.service';
 })
 export class ProductlistsComponent implements OnInit {
   allProducts:any
+  allList:any
+  currentProduct:any
+
   constructor( private prod : RestService) { }
 
   ngOnInit(): void {
@@ -21,5 +25,11 @@ export class ProductlistsComponent implements OnInit {
         }
         )  
     }
-
-}
+    
+     deleteList( id:any) {
+      this.prod .deleteProduct(id).subscribe();
+      
+    }
+   
+    }
+    

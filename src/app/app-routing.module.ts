@@ -8,7 +8,6 @@ const routes: Routes = [
   {path : 'oreo', component : OreoComponent},
   {path : 'display/:product_id', component : DisplayComponent},
   {path : 'productlists', component : ProductlistsComponent}
- 
   
 ];
 
