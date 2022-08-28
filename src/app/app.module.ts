@@ -14,7 +14,9 @@ import { ProductlistsComponent } from './components/productlists/productlists.co
 import {MatFormFieldModule} from '@angular/material/form-field';
 import { MatInputModule } from '@angular/material/input';
 import {MatSnackBarModule} from '@angular/material/snack-bar';
-
+import { SearchComponent } from './components/search/search.component';
+import {MatDialogModule} from '@angular/material/dialog';
+import { UpdateComponent } from './components/update/update.component';
 
 
 @NgModule({
@@ -23,6 +25,8 @@ import {MatSnackBarModule} from '@angular/material/snack-bar';
     OreoComponent,
     DisplayComponent,
     ProductlistsComponent,
+    SearchComponent,
+    UpdateComponent,
   ],
   imports: [
     BrowserModule,
@@ -34,7 +38,8 @@ import {MatSnackBarModule} from '@angular/material/snack-bar';
     AgGridModule,
     MatFormFieldModule,
     MatInputModule,
-    MatSnackBarModule
+    MatSnackBarModule,
+    MatDialogModule
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -11,7 +11,7 @@ export class RestService {
   constructor(private httpClient:HttpClient) { }
   url : string = 'http://localhost:3000/products';
   link : string = 'http://localhost:3000/cart'
-  
+  urlLink: string = 'http://localhost:3000/getImage'
 
   getService(url:string, httpoption:any){
     
@@ -54,5 +54,13 @@ export class RestService {
     return this.getService('http://localhost:3000/cart', header)
 
   }
- 
+  updateProd(data:any){
+    let header = {
+      headers: new HttpHeaders({
+        'Content-Type': 'application/json'
+        
+      })
+    }
+   return this.postService(this.urlLink, data, header)
+  }
 }

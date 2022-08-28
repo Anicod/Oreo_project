@@ -26,7 +26,7 @@
         </div>
     </div> 
 </div>
-<table style="width: 97%; height: 10%;">
+<table style="width: 99%; height: 10%;">
     <tr>
       <th>Image</th>
       <th>Product Name</th>
@@ -41,7 +41,7 @@
         <td>{{product.description}}</td>
         <td>{{product.price}}</td>
         <td>{{product.stock}}</td>
-        <td><span class="material-symbols-outlined">{{product.update}}</span>
+        <td><span class="material-symbols-outlined"  (click)="openDialog(product.miniImage, product.id)" style="cursor: pointer;">{{product.update}}</span>
             <span class="material-symbols-outlined" (click)="deleteList(product.id)" style="cursor: pointer;"> {{product.remove}}</span>
         </td>
     </tr>

@@ -19,6 +19,24 @@
       "remove": "delete"
     },
     {
+      "id": "2",
+      "image": "../../../assets/perfumegg.png",
+      "name": "perfume",
+      "price": "$22",
+      "discount": "$15",
+      "description": "Awsome fregrence of preimium  collection",
+      "Review": "40 reviews",
+      "ratings": "gradegradegrade",
+      "miniImage": [
+        "../../../assets/perfumeg.png",
+        "../../../assets/perfumeb.png"
+      ],
+      "ratingst": "gradegrade",
+      "stock": "out of stock",
+      "update": "edit",
+      "remove": "delete"
+    },
+    {
       "id": "3",
       "image": "../../../assets/images(1).png",
       "name": "Candle Holder",
@@ -125,9 +143,45 @@
       "stock": "In stock",
       "update": "edit",
       "remove": "delete"
+    },
+    {
+      "id": "9",
+      "image": "../../../assets/shirt.png",
+      "name": "Shirt",
+      "price": "$60",
+      "discount": "$40",
+      "description": "THE UPMARKET STORE Mens Printed Cotton T-Shirt Happy Time Blue",
+      "Review": "41 reviews",
+      "ratings": "gradegradegrade",
+      "miniImage": [
+        "../../../assets/reds.png",
+        "../../../assets/bluesh.png"
+      ],
+      "ratingst": "gradegrade",
+      "stock": "In stock",
+      "update": "edit",
+      "remove": "delete"
     }
   ],
   "cart": [
+    {
+      "id": "7",
+      "image": "../../../assets/images(5).png",
+      "name": "Carry bag",
+      "price": "$32",
+      "discount": "$20",
+      "description": "Backpack Ideal For Laptop Made up of  Polyester",
+      "Review": "46 reviews",
+      "ratings": "gradegradegradegrade",
+      "miniImage": [
+        "../../../assets/bagg.png",
+        "../../../assets/bagb.png"
+      ],
+      "ratingst": "grade",
+      "stock": "In stock",
+      "update": "edit",
+      "remove": "delete"
+    },
     {
       "id": "4",
       "image": "../../../assets/images(2).png",
@@ -147,20 +201,20 @@
       "remove": "delete"
     },
     {
-      "id": "5",
-      "image": "../../../assets/images(3).png",
-      "name": "Chair",
-      "price": "$34",
-      "discount": "$27",
-      "description": "This chair is uniquely engineered to support your lower back so that you can stay focused and work comfortably anywhere, at anytime.",
-      "Review": "49 reviews",
+      "id": "9",
+      "image": "../../../assets/shirt.png",
+      "name": "Shirt",
+      "price": "$60",
+      "discount": "$40",
+      "description": "THE UPMARKET STORE Mens Printed Cotton T-Shirt Happy Time Blue",
+      "Review": "41 reviews",
       "ratings": "gradegradegrade",
       "miniImage": [
-        "../../../assets/chairg.png",
-        "../../../assets/chairw.png"
+        "../../../assets/shirt.png",
+        "../../../assets/bluesh.png"
       ],
       "ratingst": "gradegrade",
-      "stock": "Low stock",
+      "stock": "In stock",
       "update": "edit",
       "remove": "delete"
     },
@@ -181,42 +235,23 @@
       "stock": "In stock",
       "update": "edit",
       "remove": "delete"
+    }
+  ],
+  "getImage": [
+    {
+      "imagef": "../../../assets/bagg.png",
+      "images": "../../../assets/bagb.png",
+      "id": 1
     },
     {
-      "id": "6",
-      "image": "../../../assets/images(4).png",
-      "name": "Pot",
-      "price": "$30",
-      "discount": "$22",
-      "description": "This is a great decorative planter to bring your plants indoors. Well finished",
-      "Review": "42 reviews",
-      "ratings": "gradegradegrade",
-      "miniImage": [
-        "../../../assets/potr.png",
-        "../../../assets/potre.png"
-      ],
-      "ratingst": "gradegrade",
-      "stock": "Out of stock",
-      "update": "edit",
-      "remove": "delete"
+      "imagef": "../../../assets/bagg.png",
+      "images": "../../../assets/bagb.png",
+      "id": 2
     },
     {
-      "id": "7",
-      "image": "../../../assets/images(5).png",
-      "name": "Carry bag",
-      "price": "$32",
-      "discount": "$20",
-      "description": "Backpack Ideal For Laptop Made up of  Polyester",
-      "Review": "46 reviews",
-      "ratings": "gradegradegradegrade",
-      "miniImage": [
-        "../../../assets/bagg.png",
-        "../../../assets/bagb.png"
-      ],
-      "ratingst": "grade",
-      "stock": "In stock",
-      "update": "edit",
-      "remove": "delete"
+      "imagef": "../../../assets/purseg.png",
+      "images": "../../../assets/purser.png",
+      "id": 3
     }
   ]
 }

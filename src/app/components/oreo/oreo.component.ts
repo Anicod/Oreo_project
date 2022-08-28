@@ -26,6 +26,12 @@ export class OreoComponent implements OnInit {
         }
         )
     }
+    searchText:string = ""
+    
+    onSearchTextEntered(searchValue:string){
+      this.searchText = searchValue;
+      console.log(this.searchText);
+    }
     
   }
    

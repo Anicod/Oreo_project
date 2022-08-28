@@ -7,7 +7,7 @@
             <span class="material-symbols-outlined">perm_contact_calendar</span>
             <span class="material-symbols-outlined">notifications</span>
             <span class="material-symbols-outlined">flag</span>
-            <span><input type="text" placeholder="search"></span>
+            <app-search (searchTextChanged)="onSearchTextEntered($event)"></app-search>
             <span class="material-symbols-outlined" id="log">logout</span>
             <span class="material-symbols-outlined" id="setting">Settings</span>
         </p>
@@ -18,7 +18,7 @@
         <h3 style="color: white; font-size: 25px">Products</h3> 
         <div style="margin-bottom: 300px;">
             <p style="color: white;">Welcome to Oreo <span fxLayout="row" fxLayoutAlign="center" class="innerhead">
-                <span class="material-symbols-outlined" style="font-size: 15px;">home</span>
+                <span class="material-symbols-outlined" style="font-size: 15px; cursor: all-scroll;">home</span>
                 <button class="buttonin">Oreo/</button> 
                 <button class="buttonin">eCommerce/</button>  
                 <button class="buttonin">Products</button></span>
@@ -29,19 +29,21 @@
 <div>
     <mat-grid-list cols="4" rowHeight="1:1.2" style="width: 1520px;" >
         <span *ngFor="let product of allProducts">
-            <mat-grid-tile routerLink="/display/{{product.id}}">
-               <img src="{{product.image}}" alt="" width="340px" height="340px">
-                <div class="matinnerdivname">
-                    <h5>{{product.name}}</h5>
-                </div>
-                <div class="matinnerdivprice">
-                    <h3>{{product.price}}</h3>
-                </div>
-                <div class="matinnerdivdiscount">
-                    <h3>{{product.discount}}</h3>
-                </div>
-                
-            </mat-grid-tile>  
+           <div *ngIf="searchText === '' || product.name.toLowerCase().includes(searchText) ">
+                <mat-grid-tile routerLink="/display/{{product.id}}">
+                    <img src="{{product.image}}" alt="" width="340px" height="340px">
+                    <div class="matinnerdivname">
+                        <h5>{{product.name}}</h5>
+                    </div>
+                    <div class="matinnerdivprice">
+                        <h3>{{product.price}}</h3>
+                    </div>
+                    <div class="matinnerdivdiscount">
+                        <h3>{{product.discount}}</h3>
+                    </div>
+                    
+                </mat-grid-tile>  
+           </div>
         </span>   
     </mat-grid-list>
 </div>

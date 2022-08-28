@@ -66,8 +66,16 @@ export class DisplayComponent implements OnInit {
         this.currentImage = this.miniImage[1]
         this.miniImage[1] = temp
       }
-      openSnackBar(message: any) {
-        this.snackBar.open(message);
+      openSnackBar(message: any, action:any) {
+        let snackBarRef = this.snackBar.open(message, action, {duration:2000});
+        snackBarRef.afterDismissed().subscribe(() => {
+          console.log("snackbar was dismissed");
+        }
+        )
+        snackBarRef.onAction().subscribe(() => {
+          console.log("snackbar was triggered");
+        }
+        )
         this.cart();
       }
 }
