@@ -11,7 +11,6 @@ export class RestService {
   constructor(private httpClient:HttpClient) { }
   url : string = 'http://localhost:3000/products';
   link : string = 'http://localhost:3000/cart'
-  urlLink: string = 'http://localhost:3000/getImage'
 
   getService(url:string, httpoption:any){
     
@@ -23,6 +22,9 @@ export class RestService {
   }
   deleteProduct(id: number): Observable<void> {
     return this.httpClient.delete<void>(`${this.link}/${id}`)
+  }
+  putService(url:string, data:any, httpoption:any){
+    return this.httpClient.put(url, data, httpoption)
   }
  
   getData(){
@@ -54,13 +56,13 @@ export class RestService {
     return this.getService('http://localhost:3000/cart', header)
 
   }
-  updateProd(data:any){
+  updateCart(data:any){
     let header = {
       headers: new HttpHeaders({
         'Content-Type': 'application/json'
         
       })
     }
-   return this.postService(this.urlLink, data, header)
+   return this.putService('http://localhost:3000/cart', data, header)
   }
 }

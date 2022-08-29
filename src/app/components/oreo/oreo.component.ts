@@ -26,7 +26,12 @@ export class OreoComponent implements OnInit {
         }
         )
     }
+    producCount: string = "All"
     searchText:string = ""
+
+    onSearchEmpty(allProducts:any){
+      this.producCount = allProducts;
+    }
     
     onSearchTextEntered(searchValue:string){
       this.searchText = searchValue;

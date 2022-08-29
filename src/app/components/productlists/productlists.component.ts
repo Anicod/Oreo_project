@@ -1,4 +1,5 @@
 import { Component, Input, OnInit } from '@angular/core';
+import { sortAscendingPriority } from '@angular/flex-layout';
 import { MatDialog } from '@angular/material/dialog';
 import { ActivatedRoute } from '@angular/router';
 import { RestService } from 'src/app/services/rest.service';
@@ -21,10 +22,11 @@ export class ProductlistsComponent implements OnInit {
   ngOnInit(): void {
     this.getproduct();
   }
-  openDialog(image:any, id:any): void {
+  openDialog(products:any): void {
     const dialogRef = this.dialog.open(UpdateComponent, {
-      width: '350px',
-      data:image
+      width: '500px',
+      height: '500px',
+      data:products
     });
 
     dialogRef.afterClosed().subscribe((result:any) => {
@@ -37,7 +39,6 @@ export class ProductlistsComponent implements OnInit {
         {
           this.allProducts=res
           this.data = this.allProducts
-
           
         }
         )  

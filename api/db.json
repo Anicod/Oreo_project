@@ -165,26 +165,26 @@
   ],
   "cart": [
     {
-      "id": "7",
-      "image": "../../../assets/images(5).png",
-      "name": "Carry bag",
-      "price": "$32",
-      "discount": "$20",
-      "description": "Backpack Ideal For Laptop Made up of  Polyester",
-      "Review": "46 reviews",
-      "ratings": "gradegradegradegrade",
+      "id": "2",
+      "image": "../../../assets/perfumeg.png",
+      "name": "perfume",
+      "price": "$22",
+      "discount": "$15",
+      "description": "Awsome fregrence of preimium  collection",
+      "Review": "40 reviews",
+      "ratings": "gradegradegrade",
       "miniImage": [
-        "../../../assets/bagg.png",
-        "../../../assets/bagb.png"
+        "../../../assets/perfumeg.png",
+        "../../../assets/perfumeb.png"
       ],
-      "ratingst": "grade",
-      "stock": "In stock",
+      "ratingst": "gradegrade",
+      "stock": "out of stock",
       "update": "edit",
       "remove": "delete"
     },
     {
       "id": "4",
-      "image": "../../../assets/images(2).png",
+      "image": "../../../assets/purseg.png",
       "name": "Perse",
       "price": "$32",
       "discount": "$25",
@@ -201,26 +201,8 @@
       "remove": "delete"
     },
     {
-      "id": "9",
-      "image": "../../../assets/shirt.png",
-      "name": "Shirt",
-      "price": "$60",
-      "discount": "$40",
-      "description": "THE UPMARKET STORE Mens Printed Cotton T-Shirt Happy Time Blue",
-      "Review": "41 reviews",
-      "ratings": "gradegradegrade",
-      "miniImage": [
-        "../../../assets/shirt.png",
-        "../../../assets/bluesh.png"
-      ],
-      "ratingst": "gradegrade",
-      "stock": "In stock",
-      "update": "edit",
-      "remove": "delete"
-    },
-    {
       "id": "1",
-      "image": "../../../assets/downcy.png",
+      "image": "../../../assets/bicyclegr.png",
       "name": "Bicycle",
       "price": "$18",
       "discount": "$12",
@@ -235,23 +217,24 @@
       "stock": "In stock",
       "update": "edit",
       "remove": "delete"
-    }
-  ],
-  "getImage": [
-    {
-      "imagef": "../../../assets/bagg.png",
-      "images": "../../../assets/bagb.png",
-      "id": 1
     },
     {
-      "imagef": "../../../assets/bagg.png",
-      "images": "../../../assets/bagb.png",
-      "id": 2
-    },
-    {
-      "imagef": "../../../assets/purseg.png",
-      "images": "../../../assets/purser.png",
-      "id": 3
+      "id": "5",
+      "image": "../../../assets/chairg.png",
+      "name": "Chair",
+      "price": "$34",
+      "discount": "$27",
+      "description": "This chair is uniquely engineered to support your lower back so that you can stay focused and work comfortably anywhere, at anytime.",
+      "Review": "49 reviews",
+      "ratings": "gradegradegrade",
+      "miniImage": [
+        "../../../assets/chairg.png",
+        "../../../assets/chairw.png"
+      ],
+      "ratingst": "gradegrade",
+      "stock": "Low stock",
+      "update": "edit",
+      "remove": "delete"
     }
   ]
 }

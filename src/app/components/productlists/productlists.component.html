@@ -41,7 +41,7 @@
         <td>{{product.description}}</td>
         <td>{{product.price}}</td>
         <td>{{product.stock}}</td>
-        <td><span class="material-symbols-outlined"  (click)="openDialog(product.miniImage, product.id)" style="cursor: pointer;">{{product.update}}</span>
+        <td><span class="material-symbols-outlined"  (click)="openDialog(product)" style="cursor: pointer;">{{product.update}}</span>
             <span class="material-symbols-outlined" (click)="deleteList(product.id)" style="cursor: pointer;"> {{product.remove}}</span>
         </td>
     </tr>
