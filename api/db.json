@@ -165,42 +165,6 @@
   ],
   "cart": [
     {
-      "id": "2",
-      "image": "../../../assets/perfumeg.png",
-      "name": "perfume",
-      "price": "$22",
-      "discount": "$15",
-      "description": "Awsome fregrence of preimium  collection",
-      "Review": "40 reviews",
-      "ratings": "gradegradegrade",
-      "miniImage": [
-        "../../../assets/perfumeg.png",
-        "../../../assets/perfumeb.png"
-      ],
-      "ratingst": "gradegrade",
-      "stock": "out of stock",
-      "update": "edit",
-      "remove": "delete"
-    },
-    {
-      "id": "4",
-      "image": "../../../assets/purseg.png",
-      "name": "Perse",
-      "price": "$32",
-      "discount": "$25",
-      "description": "2 Adjustable & Detachable Shoulder Straps",
-      "Review": "47 reviews",
-      "ratings": "gradegradegradegrade",
-      "miniImage": [
-        "../../../assets/purseg.png",
-        "../../../assets/purser.png"
-      ],
-      "ratingst": "grade",
-      "stock": "In stock",
-      "update": "edit",
-      "remove": "delete"
-    },
-    {
       "id": "1",
       "image": "../../../assets/bicyclegr.png",
       "name": "Bicycle",
@@ -219,20 +183,74 @@
       "remove": "delete"
     },
     {
-      "id": "5",
-      "image": "../../../assets/chairg.png",
-      "name": "Chair",
-      "price": "$34",
-      "discount": "$27",
-      "description": "This chair is uniquely engineered to support your lower back so that you can stay focused and work comfortably anywhere, at anytime.",
-      "Review": "49 reviews",
+      "id": "6",
+      "image": "../../../assets/potr.png",
+      "name": "Pot",
+      "price": "$32",
+      "discount": "$22",
+      "description": "This is a great decorative planter to bring your plants indoors. Well finished",
+      "Review": "42 reviews",
       "ratings": "gradegradegrade",
       "miniImage": [
-        "../../../assets/chairg.png",
-        "../../../assets/chairw.png"
+        "../../../assets/potr.png",
+        "../../../assets/potre.png"
       ],
       "ratingst": "gradegrade",
-      "stock": "Low stock",
+      "stock": "Out of stock",
+      "update": "edit",
+      "remove": "delete"
+    },
+    {
+      "id": "8",
+      "image": "../../../assets/shooes.png",
+      "name": "shooes",
+      "price": "$40",
+      "discount": "$30",
+      "description": "RIDER BOOTS FOR MEN CASUAL OUTDOOR for WALKING RUNNING and TRAVLING",
+      "Review": "41 reviews",
+      "ratings": "gradegradegrade",
+      "miniImage": [
+        "../../../assets/shooesre.png",
+        "../../../assets/shooesg.png"
+      ],
+      "ratingst": "gradegrade",
+      "stock": "In stock",
+      "update": "edit",
+      "remove": "delete"
+    },
+    {
+      "id": "4",
+      "image": "../../../assets/purseg.png",
+      "name": "Perse",
+      "price": "$60",
+      "discount": "$25",
+      "description": "2 Adjustable & Detachable Shoulder Straps",
+      "Review": "47 reviews",
+      "ratings": "gradegradegradegrade",
+      "miniImage": [
+        "../../../assets/purseg.png",
+        "../../../assets/purser.png"
+      ],
+      "ratingst": "grade",
+      "stock": "In stock",
+      "update": "edit",
+      "remove": "delete"
+    },
+    {
+      "id": "3",
+      "image": "../../../assets/holderr.png",
+      "name": "Candle Holder",
+      "price": "$40",
+      "discount": "$22",
+      "description": "The elegant lines of this gold candle holder set of 2 make it a beautiful addition for your living space",
+      "Review": "43 reviews",
+      "ratings": "gradegrade",
+      "miniImage": [
+        "../../../assets/holderr.png",
+        "../../../assets/holderg.png"
+      ],
+      "ratingst": "gradegradegrade",
+      "stock": "In stock",
       "update": "edit",
       "remove": "delete"
     }

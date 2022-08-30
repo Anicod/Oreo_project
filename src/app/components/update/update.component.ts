@@ -10,6 +10,9 @@ import { RestService } from 'src/app/services/rest.service';
 export class UpdateComponent implements OnInit {
   imagea:any
   name:any
+  Detail:any
+  Amount:any
+  Stock:any
   @Output() messageEvent = new EventEmitter<string>()
   constructor(public dialogRef: MatDialogRef<UpdateComponent>,
     @Inject(MAT_DIALOG_DATA) public data: any, private prod : RestService) { }
@@ -17,28 +20,31 @@ export class UpdateComponent implements OnInit {
   ngOnInit(): void {
     this.imagea = this.data.miniImage[0]
     this.name = this.data.name
+    this.Detail = this.data.description
+    this.Amount = this.data.price
+    this.Stock = this.data.stock
   }
   onNoClick(): void {
     this.dialogRef.close();
   }
   
   close(){
+    this.deleteList(this.data.id);
     let data={
            "id" : this.data.id,
            "image" :this.imagea,
            "name" : this.data.name,
-           "price": this.data.price,
+           "price": this.Amount,
            "discount": this.data.discount,
-           "description": this.data.description,
+           "description": this.Detail,
            "Review": this.data.Review,
            "ratings":this.data.ratings,
            "miniImage":  this.data.miniImage,
            "ratingst":this.data.ratingst,
-           "stock":this.data.stock,
+           "stock":this.Stock,
            "update":this.data.update,
            "remove":this.data.remove
          }
-         this.deleteList(this.data.id);
          this.prod.addList(data).subscribe((res:any)=>{
          console.log(res)
          this.messageEvent.emit()

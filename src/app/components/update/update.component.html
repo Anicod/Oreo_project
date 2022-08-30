@@ -1,17 +1,15 @@
 <div  class="innercontainer">
     <div fxLayout="column" fxLayoutAlign="center center">
-        <img src="{{imagea}}" alt="" width="50px" height="50px" (click)="close()">
-        <form>
+        <img src="{{imagea}}" alt="" width="50px" height="50px">
             <label for="fname">Product Name</label><br>
             <input type="text" placeholder="Product Name" value="{{name}}" readonly><br><br>
             <label for="fname">Detail</label><br>
-            <input type="text" name="lname" placeholder="Detail"><br><br>
+            <input type="text" [(ngModel)]="Detail"><br><br>
             <label for="fname">Amount</label><br>
-            <input type="text" id="fname" name="fname" placeholder="Amount"><br><br>
+            <input type="text"[(ngModel)]="Amount"><br><br>
             <label for="fname">Stock</label><br>
-            <input type="text" id="fname" name="fname" placeholder="Stock"><br><br>
-        </form> 
+            <input type="text"[(ngModel)]="Stock"><br><br>
     </div>
-    <button style="margin-left: 180px;" mat-dialog-close="false">close</button>
+    <button style="margin-left: 180px;" mat-dialog-close="false" (click)="close()">close</button>
 </div>
 
